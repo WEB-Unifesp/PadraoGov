@@ -32,11 +32,13 @@ div#<?php echo $id; ?> ul.maximenuck {
 	zoom:1;
 	filter: none;
 	min-height : 34px;
-	background :  #1a1a1a;
+
+	/* background :  #1a1a1a; */
+	
 }
 
 div#<?php echo $id; ?>.maximenuckh ul.maximenuck {
-	background :  #1a1a1a url(../images/fond_bg.png) top left repeat-x;
+	/* background :  #1a1a1a url(../images/fond_bg.png) top left repeat-x; */
 }
 
 div#<?php echo $id; ?> ul.maximenuck:after {
@@ -63,8 +65,9 @@ div#<?php echo $id; ?> ul.maximenuck li.maximenuck.level1 {
 	text-align: left;
 	cursor: pointer;
 	filter: none;
-	padding : 0 10px;
-	background : url(../images/separator.png) top right no-repeat;
+	padding : 0 5px;
+	/* background : url(../images/separator.png) top right no-repeat; */
+	
 }
 
 /** IE 7 only **/
@@ -133,7 +136,7 @@ div#<?php echo $id; ?>.maximenuckh ul.maximenuck li.level1.parent > span.separat
 	margin: 0 3px;
 	bottom: 4px;
 	content: "";
-	display: block;
+	display: none;
 	float: right;
 	height: 0;
 	left: 50%;
@@ -160,6 +163,7 @@ div#<?php echo $id; ?>.maximenuckv ul.maximenuck li.level1.parent > span.separat
 	position: absolute;
 	right: 3px;
 	top: 2px;
+	
 }
 
 /* arrow image for submenu parent item */
@@ -194,6 +198,7 @@ div#<?php echo $id; ?> ul.maximenuck li:not(.fullwidth) div.floatck.fixRight {
 	left:auto;
 	right:0px;
 	top:auto;
+	
 }
 
 
@@ -225,29 +230,32 @@ div#<?php echo $id; ?> ul.maximenuck2 {
     z-index:11000;
     clear:left;
     text-align : left;
-    background : transparent;
+    background-color : transparent;
     margin : 0 !important;
     padding : 0 !important;
     border : none !important;
-    box-shadow: none !important;
+    /* box-shadow: 1px 1px 20px #999 !important; */
     width : 100%; /* important for Chrome and Safari compatibility */
     position: static !important;
-    overflow: visible !important;
     display: block !important;
     float: none !important;
     visibility: visible !important;
+	
 }
 
 div#<?php echo $id; ?> ul.maximenuck li ul.maximenuck2 li.maximenuck,
 div#<?php echo $id; ?> ul.maximenuck2 li.maximenuck {
 	text-align : left;
 	z-index : 11001;
-	padding : 2px 0 0 0;
+	padding : 4px 0 4px 0;
 	margin : 0 5px;
 	position:static;
 	float:none !important;
 	list-style : none;
 	display: block !important;
+	background-color: transparent;
+	border: none !important;
+	
 }
 
 div#<?php echo $id; ?> ul.maximenuck li ul.maximenuck2 li.maximenuck:hover,
@@ -270,12 +278,14 @@ div#<?php echo $id; ?> ul.maximenuck2 li.maximenuck span.separator {
 	outline : none;
 	white-space: normal;
 	filter: none;
-	border-bottom : 1px solid #505050;
+	border-bottom : 1px solid #ddd;
 	width: 96%;
 	clear:both;
 	text-shadow: none;
 	color: #888;
 }
+
+
 
 /* submenu link */
 div#<?php echo $id; ?> ul.maximenuck li.maximenuck ul.maximenuck2 li a,
@@ -296,8 +306,9 @@ div#<?php echo $id; ?> ul.maximenuck2 li:hover > a,
 div#<?php echo $id; ?> ul.maximenuck2 li:hover > h2 a,
 div#<?php echo $id; ?> ul.maximenuck2 li:hover > h3 a,
 div#<?php echo $id; ?> ul.maximenuck2 li.active > a{
-	color: #ddd;
-	background: none !important;
+	color: #195128;
+	/* background: none !important; */
+	
 }
 
 
@@ -341,6 +352,10 @@ div#<?php echo $id; ?> span.descck {
 	margin: -3px 0 3px 0;
 }
 
+
+
+
+
 /*--------------------------------------------
 ---		Submenus						------
 ---------------------------------------------*/
@@ -355,8 +370,8 @@ div#<?php echo $id; ?> div.floatck {
 	background : url(../images/transparent.gif); /* important for hover to work good under IE7 */
 	/*width : 180px;/ /* default width */
 	text-align:left;
-	background: #1a1a1a;
-	border: 1px solid #707070;
+	background: #ddd;
+	border: 1px solid #ddd;
 	width: inherit !important;
 	z-index:9999;
 	cursor: auto;
@@ -692,7 +707,7 @@ div#<?php echo $id; ?> .maxipushdownck ul.maximenuck2 li.maximenuck.parent.nodro
 /* remove the arrow image for parent item */
 div#<?php echo $id; ?> ul.maximenuck li.maximenuck.level1.parent ul.maximenuck2 li.parent.nodropdown > *:after,
 div#<?php echo $id; ?> .maxipushdownck ul.maximenuck2 li.parent > *:after {
-	display: none;
+	display: none !important;
 }
 
 div#<?php echo $id; ?> li.maximenuck.nodropdown > div.floatck > div.maxidrop-main {
