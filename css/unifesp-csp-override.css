@@ -1,0 +1,434 @@
+/* Custom CSS */
+/*----modificações gerais--------------*/
+/*
+.wrapper.show-menu .canvas {
+    transform: translateX(300px);
+z-index:99;
+}
+.wrapper{
+position: relative;
+overflow: hidden;
+width: 100%;
+
+z-index:99;
+}
+.canvas{
+width: 100%;
+    
+    position: relative;
+    transform: translateX(0);
+    transition: .3s ease all;
+z-index:99;
+}
+
+.menu {
+    
+    position: absolute;
+    transform: translateX(-300px);
+    width: 30px;
+    background: #BF0000;
+    padding: 5rem;
+z-index:99;
+}
+*/
+.active .portrait-image {
+    width: 25% !important;
+}
+
+/*Eventos*/
+.eventos .span5 {
+    width: 400px !important;
+}
+
+
+
+.eventos .span5 {
+    
+	margin: 10px !important;
+}
+
+.eventos  .outstanding-header{
+    border-top: none !important; 
+    background: none !important;
+    min-height: 0 !important;
+    padding-bottom: 4px;
+    position: relative;
+    border-bottom: 2px solid #355E85 !important;
+}
+
+/*Informes*/
+
+.informes  .outstanding-header{
+    border-top: none !important; 
+    background: none !important;
+    min-height: 0 !important;
+    padding-bottom: 4px;
+    position: relative;
+    border-bottom: 2px solid #AD5D49 !important;	
+}
+
+.informes a{
+	color: black !important;
+}
+
+.informes a:hover{
+	text-decoration: underline;
+}
+
+.informes h2{
+	color: 	#AD5D49 !important;
+	
+}	
+
+/*Notícias*/
+
+.noticias a{
+	color: black !important;
+}
+
+.noticias a:hover{
+	text-decoration: underline;
+}
+
+.noticias  .outstanding-header{
+    border-top: none !important; 
+    background: none !important;
+    min-height: 0 !important;
+    padding-bottom: 4px;
+    position: relative;
+    border-bottom: 2px solid #355E85 !important;
+}
+
+.noticias h2{
+	color: 	#355E85 !important;
+	
+}	
+	
+.sprocket-grids-b-title a:hover{
+font-weight:600 !important;
+
+}
+
+.sprocket-grids-b-title a{
+color: white !important;
+
+}
+
+
+
+.layout-slideshow2 .sprocket-features-img-container img{
+	height:auto;
+	border-radius:10px;
+	width: 100%;
+}
+
+.alunobanner .layout-slideshow2 .sprocket-features-img-container {
+    position: absolute !important;    
+    bottom: 0;
+	left: 0;
+}
+
+
+.alunobanner{
+height: auto !important;
+width: 100% !important;
+
+}
+.alunobanner .sprocket-features-img-list{
+min-height:300px !important;
+width:100% !important;
+}
+
+.alunobanner  .sprocket-features-index-1{
+display: inline !important;
+}
+
+
+	
+/*Banner*/
+.layout-slideshow2 .readon:hover{
+	color:yellow !important;
+	font-weight: bolder !important;
+}
+.sprocket-features-arrows {
+    position: absolute;
+    top: 50%;
+    width: 120%;
+    left: -10%;
+}	
+.sprocket-features-content h2:first-child{
+	font-size:1.5em!important;
+}
+
+.layout-slideshow2 .sprocket-features-content {
+    position: absolute;
+    bottom: 0;
+	left: 0;
+    width: 100%;
+    text-align: left;
+    background: rgba(12,12,12,0.8);
+    padding: 0;    
+    margin: 0 !important;   
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	
+}
+
+.layout-slideshow2 .readon {
+	color: white !important;    
+	font-weight: bolder !important;
+}
+
+.layout-slideshow2 .sprocket-features-content::before{
+	display:none !important;
+}
+
+.sprocket-features-desc p{
+	font-style: italic;
+}
+
+
+/*Header*/
+
+header{
+background-color: #255a36 !important;
+background-image: none;
+
+}
+
+header #logo a:focus {
+	text-decoration: none;
+}
+header #logo h1 {
+	color:#fff;
+	font-size: 2.4em;
+	line-height: 1em;
+	letter-spacing: -1px;
+	font-family: Cinzel;
+	font-weight:200 !important;
+}
+header #logo.small h1 {
+    font-family: Cinzel;
+	font-size: 2.0em;
+}
+	
+header #logo .portal-description {
+	font-size: 1.1em;
+	text-transform: uppercase;
+	font-family: Cinzel;
+}
+
+/*Menu relevante - lateral*/
+
+
+main #navigation nav .current{
+	font-weight: bold;
+	background:lightgray !important;
+	cursor: default;
+}
+
+main #navigation nav h2{
+	border-top: 2px solid #195128;
+    color: #195128;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.6);
+    height: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    background: -moz-linear-gradient(top, #ffffff 0%, #eaebee 75%);
+    background: -webkit-linear-gradient(top, #ffffff 0%,#eaebee 75%);
+    background: linear-gradient(to bottom, #ffffff 0%,#eaebee 75%);
+}
+
+
+
+	
+/*Em destaque - topo*/
+main #em-destaque a:hover,
+main #em-destaque a:active,
+main #em-destaque a:focus
+{	
+	text-decoration: none !important;
+	font-weight: 600;
+	color: #255a36;
+	
+}
+main #em-destaque ul .current{
+	font-weight: bold;	
+	cursor: default;
+	background-color:lightgray;
+}
+
+/*
+main #em-destaque li:hover,
+main #em-destaque li:active,
+main #em-destaque li:focus
+{	
+	background-color:#c3d3ce;
+}
+main #em-destaque h2{
+	background-color: #707681;
+	
+}
+
+main #em-destaque a:hover,
+main #em-destaque a:active,
+main #em-destaque a:focus
+{	
+	text-decoration: none !important;
+	background-color:#c3d3ce;
+}
+
+main #em-destaque ul{
+	padding: 0px !important;
+}
+*/
+/*Footer*/
+footer .footer-logos {
+    display: none !important;
+}
+
+footer .footer-ferramenta {
+    background: #255a36;    
+    text-align: center;
+	color: white;
+}
+footer .footer-ferramenta a {
+    color: white;
+}
+
+footer .footer-ferramenta a:hover {
+    background-color: #267c54;
+}
+
+footer .footer-atalhos {
+    border-bottom: none;
+}	
+	
+footer {
+    background: #f7f7f7;
+}	
+footer nav a {    
+    color: #727d83;
+}
+
+footer nav a:hover {    
+    text-decoration: none !important;
+	/*background-color:#c3d3ce !important;*/
+	font-weight: 600;
+	color: #255a36;
+}
+
+footer nav h2{
+	color: #577169;
+}
+
+
+@media screen and ( min-width: 980px){
+/*----monitores acima de 980px ------- */
+.espmobile h2:first-child{
+	display:none;
+	}
+
+main #navigation a:hover,
+main #navigation a:active
+
+	{	
+	text-decoration: none !important;
+	font-weight: 600;
+	color: #255a36;
+}
+	/*
+main #em-destaque{
+	margin-top: -24px;
+	background-color:#c3d3ce;
+	}
+
+
+main #navigation li:hover,
+main #navigation li:active,
+main #navigation li:focus
+	{
+	background-color:#c3d3ce !important;
+	
+	}
+
+
+	}*/
+
+
+}
+
+
+
+@media screen and (max-width: 767px){
+/*------ Mobile - abaixo de 767px------------------*/
+
+header #logo .portal-description {
+	font-size: 1em;
+	}
+/*main #em-destaque h2{
+	background-color: #195128 !important;
+	}*/
+
+header #logo {
+    text-align: center
+	}
+header #logo a {
+	display: block;
+	padding-top: 50px;
+	/*background: url("../../../images/Unifesp-600px-branco-peq.png") no-repeat center 10px;*/
+	}
+	
+header #logo img {
+	position: relative;
+    top: 50%;
+    left: 45%;
+    margin-top: -45px;
+    margin-left: -50px
+	}	
+header #logo h1 {
+	font-size: 1.6em;
+	margin-top: 25px;
+	}
+
+footer .footer-atalhos {
+    display: none;
+}
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 979px){
+/*-----------entre 768px e 979px ---------------*/
+main #navigation{
+		background-color: red;		
+	}
+
+main .container #navigation{
+	margin-top: -8px !important; 
+	}
+
+/*main #em-destaque {
+margin-top: 42px !important;
+	}*/
+
+main .container #navigation {
+    margin-top: -2px !important;
+}
+
+main #em-destaque {
+    margin-top: -40px !important;
+}
+	
+main #content {
+    padding-top: 30px !important;
+    margin-top: 12px !important;
+	}
+
+
+	
+}
+
+
+
