@@ -3,7 +3,7 @@ Customização do template PadrãoGov para o Campus São Paulo - Unifesp, utiliz
 
 # Componentes utilizados
 - Akeeba Backup
-- FlexiContent
+- FlexiContent (removido componente e modificado o core do joomla)
 - JEvents
 - RokSPRocket
 
