@@ -1,50 +1,52 @@
 /* Custom CSS */
 /*----modificações gerais--------------*/
-/*
-.wrapper.show-menu .canvas {
-    transform: translateX(300px);
-z-index:99;
-}
-.wrapper{
-position: relative;
-overflow: hidden;
-width: 100%;
 
-z-index:99;
-}
-.canvas{
-width: 100%;
-    
-    position: relative;
-    transform: translateX(0);
-    transition: .3s ease all;
-z-index:99;
+/*Arrow - carousel*/
+
+.layout-slideshow2 .sprocket-features-arrows .arrow {
+	z-index: 5 !important;
 }
 
-.menu {
-    
-    position: absolute;
-    transform: translateX(-300px);
-    width: 30px;
-    background: #BF0000;
-    padding: 5rem;
-z-index:99;
-}
-*/
-.active .portrait-image {
-    width: 25% !important;
+.layout-slideshow2 .sprocket-features-pagination {
+	z-index: 5 !important;
 }
 
+/*Alunos*/
+
+#content.internas ul li {
+    display: inline-block;
+}
+
+.sprocket-tabs-panels .alunos .sprocket-lists-portrait{
+    width:50% !important;
+}
+
+.unidades .sprocket-strips-c-block:nth-child(even) .sprocket-strips-c-item {
+    background: #255a36;
+    border: 5px solid white;
+}
+
+.unidades .sprocket-strips-c-block:nth-child(odd) .sprocket-strips-c-item {
+    background: #255a36;
+    border: 5px solid white;
+}
+
+.unidades a{
+	color: white;
+}
+
+.unidades a:hover{
+	text-decoration: underline;
+}
+
+.unidades .sprocket-strips-c-item .sprocket-strips-c-text, .sprocket-strips-c-item .readon {
+    color: white;
+}
 /*Eventos*/
-.eventos .span5 {
-    width: 400px !important;
-}
 
-
-
-.eventos .span5 {
-    
-	margin: 10px !important;
+.eventos{
+box-sizing: border-box;
+padding: 10px;
 }
 
 .eventos  .outstanding-header{
@@ -56,7 +58,54 @@ z-index:99;
     border-bottom: 2px solid #355E85 !important;
 }
 
+.eventos h2{
+	color: 	#355E85 !important;
+	
+}
+
+.eventos table{
+	border-color: #ccc !important;
+	
+}
+
+.eventos  .mod_events_td_dayname{
+	border-bottom: 1px solid #ccc !important;	
+}
+
+.eventos .mod_events_td_daywithevents {
+   	border: none !important;
+}
+
+.eventos .mod_events_daylink:hover{
+	color: red !important;
+}
+
+.eventos .mod_events_link:hover{
+	color: red !important;
+}
+
+.eventos .mod_events_latest_table td {
+    padding: 5px !important;
+}
+
+.eventos .mod_events_latest_content a{
+	color: black !important;
+	font-weight: bold !important;
+}
+
+.eventos .mod_events_td_dayname .saturday{
+	color: #f89406 !important;
+}
+
+.eventos .mod_events_td_dayname .sunday {
+	color: #f89406 !important;
+}
+
 /*Informes*/
+.informes{
+box-sizing: border-box;
+padding: 10px;
+}
 
 .informes  .outstanding-header{
     border-top: none !important; 
@@ -80,6 +129,13 @@ z-index:99;
 	
 }	
 
+.portrait-text p{
+	margin: 0 0 20px !important;
+}
+
+.sprocket-lists-portrait-title{
+	margin: 5px 0 !important;
+}
 /*Notícias*/
 
 .noticias a{
@@ -96,14 +152,15 @@ z-index:99;
     min-height: 0 !important;
     padding-bottom: 4px;
     position: relative;
-    border-bottom: 2px solid #355E85 !important;
+    border-bottom: 2px solid #215A36 !important;
 }
 
 .noticias h2{
-	color: 	#355E85 !important;
+	color: 	#215A36 !important;
 	
 }	
-	
+
+/*	
 .sprocket-grids-b-title a:hover{
 font-weight:600 !important;
 
@@ -112,7 +169,7 @@ font-weight:600 !important;
 .sprocket-grids-b-title a{
 color: white !important;
 
-}
+}*/
 
 
 
@@ -122,6 +179,7 @@ color: white !important;
 	width: 100%;
 }
 
+/*
 .alunobanner .layout-slideshow2 .sprocket-features-img-container {
     position: absolute !important;    
     bottom: 0;
@@ -142,10 +200,11 @@ width:100% !important;
 .alunobanner  .sprocket-features-index-1{
 display: inline !important;
 }
-
+*/
 
 	
 /*Banner*/
+
 .layout-slideshow2 .readon:hover{
 	color:yellow !important;
 	font-weight: bolder !important;
@@ -240,9 +299,93 @@ main #navigation nav h2{
     background: linear-gradient(to bottom, #ffffff 0%,#eaebee 75%);
 }
 
+/*-------------MENU----------*/
 
+header div.sobre {
+    /* background-color: #00420c; */
+    background: linear-gradient(to bottom,#88A89D 0%,#267C54 100%) !important;
+    border-bottom: none !important; 
+}
 
-	
+header div.sobre li {
+    border-right: none !important;
+ }   
+
+/*CUSTOMIZAÇÃO DO MENU JUX BLACKWHITE*/
+#js-mainnav.megamenu.blackwhite ul.level0 > li.megacss > a.megacss{
+	border-left: none !important;
+	font-size: 15px !important;
+	color: white;
+	font-weight: normal !important;
+
+}
+
+#js-mainnav.megamenu.blackwhite ul.level1 li.megacss a.megacss{
+	text-shadow: none !important;
+    color: #255a36;
+
+}
+
+#megamenucss #js-mainnav.blackwhite .js-megamenu {
+    background: linear-gradient(to bottom,#88A89D 0%,#267C54 100%) !important;
+}
+
+#js-mainnav.megamenu.blackwhite {
+    background: linear-gradient(to bottom,#88A89D 0%,#267C54 100%) !important;
+}
+
+#megamenucss #js-mainnav.megamenu .js-megamenu, #megamenucss #js-mainnav.megamenu .js-megamenu .level1 .group, #megamenucss #js-mainnav.megamenu .js-megamenu ul.level1, #megamenucss #js-mainnav.megamenu .js-megamenu ul.level2, #megamenucss #js-mainnav.megamenu .js-megamenu ul.level3 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: open_sansregular,'Open Sans',Arial,Helvetica,sans-serif;
+    /*font-size: 15px !important;*/
+    color: #255a36;
+}
+
+#js-mainnav.megamenu.blackwhite .childcontent-inner {
+    background-color: #ffffff !important;    
+    border: 1px solid rgba(0, 0, 0, 0.15) !important;
+    box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.1) !important;
+   }
+
+#megamenucss .blackwhite.megamenu .jux_tabs_item ul li a {
+    color: #255a36!important;
+    font-size: 12px !important;
+}
+#js-mainnav.megamenu.blackwhite .childcontent-inner .group ul li.active {
+	background-color: #255a36 !important;
+}
+
+#megamenucss .blackwhite.megamenu ul.level0 > li.megacss:hover > a.megacss, #megamenucss #js-mainnav.megamenu.blackwhite ul.level0 li.active {
+    background: #98b3a2!important;    
+}
+
+#megamenucss .blackwhite.megamenu .jux_tabs_item ul li:hover {
+    background: #98b3a2!important;
+}	
+
+#megamenucss .blackwhite .megamenu .dropdown-menu ul.level1 li.megacss:hover>a.megacss, #megamenucss .blackwhite .dropdown-menu ul.level1 li.megacss:hover {
+    background: #98b3a2 !important;
+}
+
+#megamenucss .blackwhite.megamenu .jux_tabs_item.tabs_vertical ul li {
+    border-bottom: none !important;
+}
+
+#megamenucss .blackwhite.megamenu .jux-tabs .megacol.column1 {
+    border-left: none !important;
+}
+
+#js-mainnav.megamenu.blackwhite {
+    border: none !important;
+}
+
+#megamenucss .blackwhite.megamenu .jux_tabs_item ul li a:hover {
+    background:none !important;
+    color: #fff!important;
+}
+
 /*Em destaque - topo*/
 main #em-destaque a:hover,
 main #em-destaque a:active,
@@ -258,6 +401,8 @@ main #em-destaque ul .current{
 	cursor: default;
 	background-color:lightgray;
 }
+
+
 
 /*
 main #em-destaque li:hover,
@@ -363,6 +508,11 @@ main #navigation li:focus
 
 @media screen and (max-width: 767px){
 /*------ Mobile - abaixo de 767px------------------*/
+
+/*removendo o espaço abaixo do menu*/
+header div.sobre {    
+    padding-bottom: 0 !important;
+}
 
 header #logo .portal-description {
 	font-size: 1em;
