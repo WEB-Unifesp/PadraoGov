@@ -229,9 +229,16 @@ if (count($showBelowContent) > 0): ?>
 
 	<?php if (in_array('metakeys', $showBelowContent)): ?>
 	<div class="line">
-		Assunto(s):
-		<?php TemplateContentArticleHelper::displayMetakeyLinks( $this->item->metakey ); ?>	
-	
+		Tags:		
+		
+		<!--**************TRECHO MODIFICADO**************!-->
+<?php $this->item->tagLayout = new
+JLayoutFile('joomla.content.tags'); ?>
+       <?php echo
+$this->item->tagLayout->render($this->item->tags->itemTags); ?>
+		
+		<!--FIM ********** TRECHO MODIFICADO************!-->
+
 	</div>
 	<?php endif; ?>
 
