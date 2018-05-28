@@ -93,7 +93,16 @@ $listDirn	= $this->escape($this->state->get('list.direction'));
 	          		<?php if($article->metakey != ''): ?>
 	          		<span class="keywords">
 	                	Tags:
-	                    <?php TemplateContentCategoryHelper::displayMetakeyLinks($article->metakey); ?>
+	                <!-- ******** TRECHO MODIFICADO ********!-->    
+	                <?php if ($this->params->get('show_tags', 1)) : ?>
+		                <td headers="categorylist_header_tags" class="list-tags">
+		                	<?php $this->item->tagLayout = new JLayoutFile('joomla.content.tags'); ?>
+		                	<?php echo $this->item->tagLayout->render($article->tags->itemTags); ?>
+		                	<?php echo JText::sprintf('', $article->tags->itemTags); ?>
+	   					</td>
+					<?php endif; ?>
+					<!-- ******** FIM DO TRECHO MODIFICADO ********!-->  
+
 	                </span>
 	              	<?php endif; ?>
 				</div>
