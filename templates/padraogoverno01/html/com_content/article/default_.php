@@ -217,7 +217,7 @@ if (count($showBelowContent) > 0): ?>
 <div class="below-content">
 	<?php if (in_array('categories', $showBelowContent)): ?>
 	<div class="line">
-		registrado em:
+		Categoria:
 			<?php
 			TemplateContentArticleHelper::displayCategoryLinks($categories, $this->item); ?>
 	</div>
@@ -226,7 +226,7 @@ if (count($showBelowContent) > 0): ?>
     <?php //if (in_array('metakeys', $showBelowContent)): ?>
     <?php if($this->item->tags->itemTags): ?>
 	<div class="line">
-		Assunto(s):
+		Registrado em:
 		<?php //TemplateContentArticleHelper::displayMetakeyLinks( $this->item->metakey ); ?>
         <?php $this->item->tagLayout = new JLayoutFile('joomla.content.tags'); ?>
 	    <?php echo $this->item->tagLayout->render($this->item->tags->itemTags); ?>
