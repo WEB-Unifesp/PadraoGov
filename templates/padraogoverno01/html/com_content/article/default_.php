@@ -5,19 +5,15 @@
  * @copyright
  * @license
  */
-
 // no direct access
 defined('_JEXEC') or die;
-
 JHtml::addIncludePath(JPATH_COMPONENT . '/helpers');
-
 // Create shortcuts to some parameters.
 $params  = $this->item->params;
 $images  = json_decode($this->item->images);
 $urls    = json_decode($this->item->urls);
 $canEdit = $this->item->params->get('access-edit');
 $user    = JFactory::getUser();
-
 if($this->item->catid <= 2)
 	$params->set('show_category', 0);
 ?>
@@ -143,14 +139,14 @@ endif; ?>
 	<?php echo $this->item->toc; ?>
 <?php endif; ?>
 
-<?php if (isset($urls) AND ($params->get('urls_position')=='0')): ?>
+<?php /* if (isset($urls) AND ($params->get('urls_position')=='0')): ?>
 	<?php if($urls->urla || $urls->urlb || $urls->urlc): ?>
 	<blockquote>
 		<p>Links relacionados:</p>
 		<?php echo $this->loadTemplate('links'); ?>
 	</blockquote>
 	<?php endif; ?>
-<?php endif; ?>
+<?php endif;*/ ?>
 
 <?php if ($params->get('access-view')):?>
 <?php
@@ -227,18 +223,13 @@ if (count($showBelowContent) > 0): ?>
 	</div>
 	<?php endif; ?>
 
-	<?php if (in_array('metakeys', $showBelowContent)): ?>
+    <?php //if (in_array('metakeys', $showBelowContent)): ?>
+    <?php if($this->item->tags->itemTags): ?>
 	<div class="line">
-		Tags:		
-		
-		<!--**************TRECHO MODIFICADO**************!-->
-<?php $this->item->tagLayout = new
-JLayoutFile('joomla.content.tags'); ?>
-       <?php echo
-$this->item->tagLayout->render($this->item->tags->itemTags); ?>
-		
-		<!--FIM ********** TRECHO MODIFICADO************!-->
-
+		Assunto(s):
+		<?php //TemplateContentArticleHelper::displayMetakeyLinks( $this->item->metakey ); ?>
+        <?php $this->item->tagLayout = new JLayoutFile('joomla.content.tags'); ?>
+	    <?php echo $this->item->tagLayout->render($this->item->tags->itemTags); ?>
 	</div>
 	<?php endif; ?>
 
