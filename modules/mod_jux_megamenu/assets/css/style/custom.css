@@ -1,0 +1,80 @@
+/*===============================MODIFICAÇÕES MEGA MENU JUX======================================*/
+
+/*Background do menu fixo - sticky Navbar*/
+#megamenucss #js-mainnav.megamenu.affix{
+	background: linear-gradient(to bottom,#88A89D 0%,#267C54 100%) !important;
+}
+
+
+/*TAMANHO E COR DA FONTE */
+
+#megamenucss #js-mainnav.megamenu .js-megamenu{
+
+	font-size: 0.8em!important;
+
+} 
+
+
+#megamenucss #js-mainnav.megamenu ul.level1 li.megacss a.megacss {
+	color: #255a36 !important;
+	font-size: 12px !important;	
+
+}
+
+
+.jux_tabs_item.tabs_vertical ul li > a {
+    
+    color: #255a36 !important;
+    font-size: 12px !important;	
+}
+
+/*Efeito HOVER nos submenus e tab itens*/
+
+#megamenucss #js-mainnav.megamenu ul.level1 li.megacss a.megacss:hover {
+    background: #C3D3CE;
+}
+
+#megamenucss #js-mainnav.megamenu .childcontent-inner a:hover{
+	background: #C3D3CE;
+}
+
+/*SOMBREAMENTO*/
+
+#megamenucss #js-mainnav .js-megamenu .dropdown-menu{
+	background-color: #ffffff !important;
+    border: 1px solid rgba(0, 0, 0, 0.15) !important;
+    box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.1) !important;
+}
+
+/*---------------------------- CUSTOMIZAÇÃO MOBILE ----------------------------------*/
+
+/* -----CAMPUS SAO PAULO ----*/
+@media screen and (max-width: 768px){
+#jux_memamenu260 #js-mainnav.megamenu {
+    background: #255a36 !important;
+}
+}
+
+@media screen and (max-width: 768px){
+#jux_memamenu260 #js-mainnav.megamenu {
+	border: none !important;
+}
+}
+
+#megamenucss #js-mainnav.megamenu ul.level0 li.megacss span.megacss, #megamenucss #js-mainnav.megamenu ul.level0 li.megacss a.megacss{
+	font-size: 1.1em !important;
+}
+
+@media screen and (max-width: 768px){
+#jux_memamenu260 #js-mainnav .jux-fa.jux-fa-bars {
+	margin-bottom: 4px !important;
+}
+}
+
+/* -----CENTRAL ----*/
+
+
+/* -----EPE ----*/
+
+
+/* -----EPM ----*/
