@@ -550,14 +550,16 @@ class ContentModelArticles extends JModelList
 
 		/**********************************TRECHO MODIFICADO - TESTE ******************************************/
 		
-
-		$query->innerJoin(
+		if($tagMapNumber != 0)
+		{
+			$query->innerJoin(
 				$db->quoteName('#__contentitem_tag_map', 'tagmap')
 				
 				. ' ON tagmap.content_item_id = a.id'
 				
-			)->where("tag_id =".$tagMapNumber);
-			
+			)->where("tag_id =".$tagMapNumber);			
+		}
+		
 
 		
 
