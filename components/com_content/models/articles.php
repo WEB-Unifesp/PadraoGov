@@ -177,6 +177,10 @@ class ContentModelArticles extends JModelList
 	 */
 	protected function getListQuery()
 	{
+		// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> DECLARANDO VARIAVEL - TRECHO MODIFICADO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+		$tagMapNumber = JFactory::getApplication()->getCfg('tagMapNumber');                
+
+
 		// Get the current user for authorisation checks
 		$user = JFactory::getUser();
 
@@ -227,6 +231,10 @@ class ContentModelArticles extends JModelList
 			$query->select('fp.ordering');
 			$query->join('LEFT', '#__content_frontpage AS fp ON fp.content_id = a.id');
 		}
+
+	/*********************************TRECHO MODIFICADO**********************************************/	
+		//$query->join('INNER', '#__contentitem_tag_map AS ctm ON ctm.content_item_id = a.id');
+			
 
 		// Join over the categories.
 		$query->select('c.title AS category_title, c.path AS category_route, c.access AS category_access, c.alias AS category_alias')
@@ -538,6 +546,21 @@ class ContentModelArticles extends JModelList
 				. ' AND tagmap.type_alias = ' . $db->quote('com_content.article')
 			);
 		}
+			
+
+		/**********************************TRECHO MODIFICADO - TESTE ******************************************/
+		
+
+		$query->innerJoin(
+				$db->quoteName('#__contentitem_tag_map', 'tagmap')
+				
+				. ' ON tagmap.content_item_id = a.id'
+				
+			)->where("tag_id =".$tagMapNumber);
+			
+
+		
+
 
 		// Add the list ordering clause.
 		$query->order($this->getState('list.ordering', 'a.ordering') . ' ' . $this->getState('list.direction', 'ASC'));
