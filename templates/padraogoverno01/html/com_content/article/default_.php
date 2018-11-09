@@ -155,13 +155,22 @@ if (!empty($this->item->pagination) AND $this->item->pagination AND !$this->item
  endif;
 ?>
 <?php if($this->item->fulltext != null && $this->item->fulltext != ''): ?>
+
+	<?php /* parte original
 	<div class="description">
 		<?php echo $this->item->introtext; ?>
 	</div>
 	<?php  TemplateContentArticleHelper::displayFulltextImage($images, $params); ?>
 	<?php if ($params->get('show_readmore')) : ?>
 		<?php echo $this->item->fulltext; ?>
-	<?php endif; ?>
+	<?php endif; */ ?>
+
+	<!-- parte adicionada -->
+	<?php  TemplateContentArticleHelper::displayFulltextImage($images, $params); ?>
+	<?php echo $this->item->text; ?>
+
+
+
 <?php else: ?>
 	<?php  TemplateContentArticleHelper::displayFulltextImage($images, $params); ?>
 	<?php echo $this->item->text; ?>
