@@ -547,7 +547,7 @@ class ContentModelArticles extends JModelList
 			);
 		}
 			
-
+/*
 		/**********************************TRECHO MODIFICADO - TESTE ******************************************/
 		
 		if($tagMapNumber != 0)
@@ -559,7 +559,7 @@ class ContentModelArticles extends JModelList
 				
 			)->where("tag_id =".$tagMapNumber);			
 		}
-		
+*/		
 
 		
 
