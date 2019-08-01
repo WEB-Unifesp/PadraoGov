@@ -2,7 +2,7 @@
 /**
  * Joomla! Content Management System
  *
- * @copyright  Copyright (C) 2005 - 2018 Open Source Matters, Inc. All rights reserved.
+ * @copyright  Copyright (C) 2005 - 2019 Open Source Matters, Inc. All rights reserved.
  * @license    GNU General Public License version 2 or later; see LICENSE.txt
  */
 
@@ -40,7 +40,7 @@ class TagField extends \JFormFieldList
 	 * @var    boolean
 	 * @since  3.1
 	 */
-	public $isNested = null;
+	public $isNested = true;
 
 	/**
 	 * com_tags parameters
@@ -119,10 +119,10 @@ class TagField extends \JFormFieldList
 		$published = $this->element['published'] ?: array(0, 1);
 		$app       = Factory::getApplication();
 		$tag       = $app->getLanguage()->getTag();
-		
+
 		$db    = Factory::getDbo();
 
-		// trecho modificado
+//****************************************** trecho modificado
 
 		$user  = Factory::getUser();
 
@@ -148,8 +148,7 @@ class TagField extends \JFormFieldList
 				 }
 			 }
 
-		// fim trecho
-
+//***************************************** fim trecho
 
 		$query = $db->getQuery(true)
 			->select('DISTINCT a.id AS value, a.path, a.title AS text, a.level, a.published, a.lft')
@@ -183,11 +182,11 @@ class TagField extends \JFormFieldList
 
 		$query->where($db->qn('a.lft') . ' > 0');
 
-		//trecho modificado		
+//***********************************************trecho modificado		
 			if($tag != 54){
 				$query->where("a.title = '{$tagName}'");
 			}			
-		//fim trecho
+//************************************************fim trecho
 
 		// Filter on the published state
 		if (is_numeric($published))
